@@ -173,6 +173,11 @@ func calculateScore(password string) int {
 }
 
 func main() {
+
+	if runCLI() {
+		return
+	}
+
 	fmt.Print("Enter Password: ")
 	bytePassword, err := term.ReadPassword(int(os.Stdin.Fd()))
 	if err != nil {
@@ -255,4 +260,7 @@ func main() {
 	} else {
 		fmt.Println("\n✓ Great password! No recommendations.")
 	}
+
+	printExtras(string(bytePassword))
+
 }
