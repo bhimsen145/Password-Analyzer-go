@@ -42,7 +42,7 @@ Note how even a password with high entropy (85 bits) can still get flagged — a
 Requires [Go](https://go.dev/dl/) installed.
 
 ```bash
-git clone https://github.com/yourusername/password-analyzer-go.git
+git clone https://github.com/bhimsen145/password-analyzer-go.git
 cd password-analyzer-go
 go run main.go
 ```
